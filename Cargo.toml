@@ -1,0 +1,22 @@
+[package]
+name = "remarkable-render"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Native PDF inspection, planner indexing, and reMarkable stroke compositing"
+license = "MIT"
+
+[dependencies]
+rmscene = { path = "../rmscene" }
+pdfium-bundled = "=0.2.0"
+pdfium-render = { version = "=0.9.4", default-features = false, features = ["pdfium_latest", "thread_safe"] }
+resvg = { version = "=0.48.1", default-features = false }
+image = { version = "0.25", default-features = false, features = ["png"] }
+sha2 = "0.11"
+thiserror = "2"
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
+
+[lints.clippy]
+undocumented_unsafe_blocks = "deny"
