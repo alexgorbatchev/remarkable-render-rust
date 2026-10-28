@@ -30,10 +30,10 @@
 
 # Installation
 
-From a sibling Rust application's directory:
+From a consuming Rust application's directory:
 
 ```sh
-cargo add remarkable-render --path ../remarkable-render
+cargo add remarkable-render --git https://github.com/alexgorbatchev/remarkable-render-rust.git
 ```
 
 # Quick Start
@@ -81,7 +81,7 @@ Set environment variables before the first PDF operation; the runtime retains it
 
 # Compatibility
 
-The behavior derives from [go-remarkable-render](https://github.com/alexgorbatchev/go-remarkable-render). Rust ownership closes handles automatically, internal destinations use `Option<usize>`, and URI bytes avoid UTF-8 coercion. Planner indexing rejects February 30/31, April 31 and February 29 in non-leap years. Rasterizer and alpha quantization differences mean previews are not byte-identical across implementations. Stroke-format and SVG limitations follow the sibling [rmscene](../rmscene/README.md) package.
+The behavior derives from [go-remarkable-render](https://github.com/alexgorbatchev/go-remarkable-render). Rust ownership closes handles automatically, internal destinations use `Option<usize>`, and URI bytes avoid UTF-8 coercion. Planner indexing rejects February 30/31, April 31 and February 29 in non-leap years. Rasterizer and alpha quantization differences mean previews are not byte-identical across implementations. Stroke-format and SVG limitations follow the [rmscene](https://github.com/alexgorbatchev/rmscene-rust) dependency.
 
 # License
 

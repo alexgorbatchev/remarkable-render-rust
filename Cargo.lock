@@ -661,6 +661,7 @@ dependencies = [
 [[package]]
 name = "rmscene"
 version = "0.1.0"
+source = "git+https://github.com/alexgorbatchev/rmscene-rust.git?rev=13956586612431995d3481875e945917d0b2d0d9#13956586612431995d3481875e945917d0b2d0d9"
 
 [[package]]
 name = "roxmltree"

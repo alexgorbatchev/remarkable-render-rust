@@ -7,7 +7,7 @@ description = "Native PDF inspection, planner indexing, and reMarkable stroke co
 license = "MIT"
 
 [dependencies]
-rmscene = { path = "../rmscene" }
+rmscene = { git = "https://github.com/alexgorbatchev/rmscene-rust.git", rev = "13956586612431995d3481875e945917d0b2d0d9" }
 pdfium-bundled = "=0.2.0"
 pdfium-render = { version = "=0.9.4", default-features = false, features = ["pdfium_latest", "thread_safe"] }
 resvg = { version = "=0.48.1", default-features = false }

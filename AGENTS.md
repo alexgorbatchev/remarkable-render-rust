@@ -33,7 +33,7 @@ Native PDF inspection and reMarkable stroke previews. Inherit the parent `AGENTS
 - Planner date validity follows the supplied Gregorian year. Weekday names classify a header but need not match the calculated weekday. `Notes` takes precedence over `Day`; later duplicate pages win.
 - Tests in `tests/render.rs` exercise real PDFium, native strokes, original fixtures and Go-generated raster baselines. Preserve meaningful tolerances and source provenance in `tests/fixtures/PROVENANCE.md`; do not replace native tests with fake bindings.
 - Runtime-result changes require corresponding test-file changes and at least 90% line coverage, excluding `scripts/`. Record red/green and implementation-disable proof under `.tmp/`.
-- Format only this package; `cargo fmt --all` follows local path dependencies into independent sibling repositories.
+- Format only this package. External libraries resolve from pinned GitHub revisions.
 
 ## Boundaries
 
